@@ -3,9 +3,9 @@ from flask import Flask, render_template, request
 import pickle
 
 # Load the Multinomial Naive Bayes model and CountVectorizer object from disk
-filename = 'spam-sms-mnb-model.pkl'
-classifier = pickle.load(open(filename, 'rb'))
-cv = pickle.load(open('cv-transform.pkl','rb'))
+filename = 'spammodel.pkl'
+model = pickle.load(open(filename, 'rb'))
+count_vec = pickle.load(open('count_vec.pkl','rb'))
 app = Flask(__name__)
 
 @app.route('/')
