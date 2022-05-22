@@ -15,30 +15,22 @@
 		<!-- Website Title -->
 		<div class="container">
 			<h2 class='container-heading'><span>SPAM DETECTOR</h2>
-	        	<div class='description'>
-				<p>Let's see whether the message is a Spam or Not</p>
+	        	
 			</div>
 		</div>
 
 		<!-- Result -->
 		<div class="results">
-			{% if prediction==1 %}
-				<h1>Prediction: <span class='danger'>Gotcha! This message is a SPAM</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='spam.webp') }}" alt="SPAM Image">
-			{% elif prediction==0 %}
-				<h1>Prediction: <span class='safe'>Great! This message is NOT A SPAM</span></h1>
-				<img class="gif" src="{{ url_for('static', filename='not-spam.webp') }}" alt="Not a spam image">
+			{% if prediction=="spam" %}
+				<h1>Prediction: <span class='danger'>ข้อความนี้อาจจะเป็นข้อความหลอกลวงโปรดระมัดระวัง ในการเปิดอ่าน แนะนำให้ลบทิ้ง</span></h1>
+				<img class="gif" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/No-spam.png">
+			{% elif prediction=="nonspam" %}
+				<h1>Prediction: <span class='safe'>ข้อความนี้ไม่ใช่ข้อความหลอกลวง</span></h1>
+				<img class="gif" src="https://image.similarpng.com/very-thumbnail/2020/11/Correct-icon-design-premium-vector-PNG.png">
 			{% endif %}
 		</div>
 
 		<!-- Footer -->
-       <div class='footer'>
-           <div class="contact">
-               <a target="_blank" href="https://github.com/divyansh1195"><i class="fab fa-github fa-lg contact-icon"></i></a>
-               <a target="_blank" href="linkedin.com/in/divyansh-mathur-229190155/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
-           </div>
-           <p class='footer-description'>© Divyansh Mathur 2020</p>
-       </div>
-
+     
     </body>
 </html>
