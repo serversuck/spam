@@ -1,8 +1,6 @@
 # Spam-Detection-Flask deploy
 
-![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![Scikit-Learn](https://img.shields.io/badge/Libraries-ScikitLearn-orange.svg)![NLTK](https://img.shields.io/badge/NLTK-coral.svg)
-
-This repository consists of files required for end to end implementation and deployment of Machine Learning Spam Detection web application created with flask and deployed on the Heroku platform.
+การทำ machine learning แยกข้อความ sms ที่เป็น spam
 
 
 Ref: https://github.com/divyansh1195/ML-Spam-Detection
