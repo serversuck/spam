@@ -21,3 +21,6 @@ http://localhost:5000
 ## การทดสอบแบบAPI
 http://localhost:5000/api?msg=เงินกู้ของท่านได้รับการพิจารณาแล้ว
 
+##Heroku deploy
+> heroku login
+
