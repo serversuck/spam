@@ -20,7 +20,7 @@ http://localhost:5000
 ## การทดสอบแบบAPI
 http://localhost:5000/api?msg=เงินกู้ของท่านได้รับการพิจารณาแล้ว
 
-##Heroku deploy
+## Heroku deploy
 > heroku login
 > heroku git:remote -a myapp
 > git add .; git commit -m "add requirements.txt"; git push heroku master
