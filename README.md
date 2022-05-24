@@ -22,5 +22,7 @@ http://localhost:5000/api?msg=เงินกู้ของท่านได�
 
 ## Heroku deploy
 > heroku login
+
 > heroku git:remote -a myapp
+ 
 > git add .; git commit -m "add requirements.txt"; git push heroku master
