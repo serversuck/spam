@@ -9,6 +9,7 @@
 
 ## การติดตั้ง
 > git clone https://github.com/serversuck/spam.git
+>
 > pip install -r requirements.txt
 
 ## Run flask framework
