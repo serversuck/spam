@@ -23,9 +23,13 @@ http://localhost:5000/api?msg=เงินกู้ของท่านได�
 
 ## Heroku deploy
 > heroku login
+> 
 > heroku git:remote -a spammysms
+> 
 > git add .
+> 
 > git commit -am "make it better"
+> 
 > git push heroku main
 
 
