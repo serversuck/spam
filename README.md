@@ -29,7 +29,10 @@ http://localhost:5000/api?msg=เงินกู้ของท่านได�
 > git add .; git commit -m "add requirements.txt"; git push heroku master
 
 ## ทดสอบผลงานทำงานบน heroku
-https://spammysms.herokuapp.com/api?msg=เงินกู้ของท่านได้รับอนุมัติแล้ว
+
+> https://spammysms.herokuapp.com
+
+> https://spammysms.herokuapp.com/api?msg=เงินกู้ของท่านได้รับอนุมัติแล้ว
 
 ##อ้างอิง
 https://github.com/divyansh1195
