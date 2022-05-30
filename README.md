@@ -39,5 +39,8 @@ http://localhost:5000/api?msg=เงินกู้ของท่านได�
 
 > https://spammysms.herokuapp.com/api?msg=เงินกู้ของท่านได้รับอนุมัติแล้ว
 
+## นำ API ไปใช้กับ chatbot
+<img src=http://techno.varee.ac.th/maxm5//Screen%20Shot%202565-05-30%20at%2012.45.42.png>
+
 ##อ้างอิง
 https://github.com/divyansh1195
