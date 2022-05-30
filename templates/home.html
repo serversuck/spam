@@ -4,27 +4,36 @@
     <head>
         <meta charset="utf-8">
         <title>MS SPAM DETECTOR</title>
-        <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prompt">
+   <style>
+      body,h2 {
+       font-family: 'Prompt', sans-serif;
+       
+      }
+    </style>
     </head>
 
     <body>
 
         <!-- Website Title -->
-    	<div class="container">
-    		<h2 class='container-heading'><span>SPAM DETECTOR</h2>
+    	<div class="container mt-3">
+    		<h2 class='container mt-2'><span>SPAM DETECTOR</h2>
             <div class='description'>
-    			<p>Please type in the text box to check whether the message is a Spam or Not</p>
+    			<p>ทดสอบข้อความโดยใช้ ML จำแนกว่าเป็น spam หรือไม่</p>
     		</div>
     	</div>
 
         <!-- Text Area -->
-    	<div class="ml-container">
+    	<div class="container mt-3">
     		<form action="{{ url_for('predict') }}" method="POST">
-        		<textarea class='message-box' name="message" rows="15" cols="75" placeholder="Enter Your Message Here... eg. Let's catch up tonight, You have a meeting scheduled for tomorrow, To join our premium memebership please enter code ALLYSON30 etc. "></textarea><br/>
-        		<input type="submit" class="my-cta-button" value="Predict">
+        		<textarea class='message-box' name="message" rows="5" cols="75" ></textarea><br/>
+        		<input type="submit" class="btn btn-primary" value="Predict">
         	</form>
     	</div>
 

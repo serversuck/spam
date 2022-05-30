@@ -4,28 +4,37 @@
 	<head>
 		<meta charset="utf-8">
 		<title>SMS SPAM DETECTOR</title>
-		<link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Prompt">
+   <style>
+      body,h2 {
+       font-family: 'Prompt', sans-serif;
+       
+      }
+    </style>
 	</head>
 
 	<body>
 
 		<!-- Website Title -->
-		<div class="container">
-			<h2 class='container-heading'><span>SPAM DETECTOR</h2>
+		<div class="container mt-3">
+			<h2 class='container mt-2'><span>SPAM DETECTOR</h2>
 	        	
 			</div>
 		</div>
 
 		<!-- Result -->
-		<div class="results">
+		<div class="container mt-3">
 			{% if prediction=="spam" %}
-				<h1>Prediction: <span class='danger'>ข้อความนี้อาจจะเป็นข้อความหลอกลวงโปรดระมัดระวัง ในการเปิดอ่าน แนะนำให้ลบทิ้ง</span></h1>
+				<h2 class="body">Prediction: <span class='container mt-2'>ข้อความนี้อาจจะเป็นข้อความหลอกลวงโปรดระมัดระวัง ในการเปิดอ่าน แนะนำให้ลบทิ้ง</span></h1>
 				<img class="gif" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/No-spam.png">
 			{% elif prediction=="nonspam" %}
-				<h1>Prediction: <span class='safe'>ข้อความนี้ไม่ใช่ข้อความหลอกลวง</span></h1>
+				<h2 class="body">Prediction: <span class='container mt-2'>ข้อความนี้ไม่ใช่ข้อความหลอกลวง</span></h1>
 				<img class="gif" src="https://image.similarpng.com/very-thumbnail/2020/11/Correct-icon-design-premium-vector-PNG.png">
 			{% endif %}
 		</div>
